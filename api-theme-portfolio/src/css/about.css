@@ -83,14 +83,14 @@ body {
 
         .section-title {
             font-family: 'JetBrains Mono', monospace;
-            font-size: 1.1rem;
+            font-size: 1.4rem;
             color: var(--text-accent);
             margin-bottom: 1rem;
             padding-left: 1rem;
             position: relative;
         }
 
-        .section-title::before {
+        /* .section-title::before {
             content: '"';
             position: absolute;
             left: 0;
@@ -100,7 +100,7 @@ body {
         .section-title::after {
             content: '":';
             color: var(--text-secondary);
-        }
+        } */
 
         .section-content {
             color: var(--text-secondary);

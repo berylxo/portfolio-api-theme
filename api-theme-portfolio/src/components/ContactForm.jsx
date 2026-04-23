@@ -66,15 +66,10 @@ function ContactForm() {
     return (
         <div className="form-section">
             <div className="contact-form">
-                <div className="form-header">
-                    POST /api/v1/contact<br />
-                    Content-Type: application/json<br />
-                    Authorization: Bearer visitor-token
-                </div>
 
                 <form id="contactForm" onSubmit={handleSubmit}>
                     <div className="form-group">
-                        <label htmlFor="name" className="form-label">name</label>
+                        <label htmlFor="name" className="form-label">Name</label>
                         <input 
                             type="text" 
                             id="name" 
@@ -86,7 +81,7 @@ function ContactForm() {
                     </div>
 
                     <div className="form-group">
-                        <label htmlFor="email" className="form-label">email</label>
+                        <label htmlFor="email" className="form-label">Email</label>
                         <input 
                             type="email" 
                             id="email" 
@@ -98,7 +93,7 @@ function ContactForm() {
                     </div>
 
                     <div className="form-group">
-                        <label htmlFor="subject" className="form-label">subject</label>
+                        <label htmlFor="subject" className="form-label">Subject</label>
                         <input 
                             type="text" 
                             id="subject" 
@@ -110,7 +105,7 @@ function ContactForm() {
                     </div>
 
                     <div className="form-group">
-                        <label htmlFor="message" className="form-label">message</label>
+                        <label htmlFor="message" className="form-label">Message</label>
                         <textarea 
                             id="message" 
                             name="message" 
@@ -127,7 +122,7 @@ function ContactForm() {
                         id="submitBtn"
                         disabled={isSubmitting}
                     >
-                        {isSubmitting ? 'SENDING...' : 'POST /send-message'}
+                        {isSubmitting ? 'SENDING...' : 'Send Message'}
                     </button>
 
                     <div id="statusMessage" className="status-message">

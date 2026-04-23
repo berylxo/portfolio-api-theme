@@ -216,17 +216,6 @@
             font-size: 0.85rem;
             color: var(--text-accent);
             margin-bottom: 0.5rem;
-            text-transform: lowercase;
-        }
-
-        .form-label::before {
-            content: '"';
-            color: var(--text-secondary);
-        }
-
-        .form-label::after {
-            content: '":';
-            color: var(--text-secondary);
         }
 
         .form-input,

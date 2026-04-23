@@ -3,11 +3,6 @@ import '../css/contact.css';
 function SocialLinks() {
     return (
         <div className="contact-info">
-            <div className="info-header">
-                HTTP/1.1 <span className="status-code">200 OK</span><br />
-                Content-Type: application/json<br />
-                Response-Time: &lt; 24h
-            </div>
 
             <div className="contact-methods">
                 <div className="contact-method">
@@ -46,7 +41,7 @@ function SocialLinks() {
                         </svg>
                     </div>
                     <div className="contact-details">
-                        <p><a href="https://github.com/berylcatieno" target="_blank" rel="noopener noreferrer">@berylcatieno</a></p>
+                        <p><a href="https://github.com/berylxo" target="_blank" rel="noopener noreferrer">berylxo</a></p>
                     </div>
                 </div>
 
@@ -70,15 +65,14 @@ function SocialLinks() {
                         </svg>
                     </div>
                     <div className="contact-details">
-                        <p><a href="https://linkedin.com/in/berylcatieno" target="_blank" rel="noopener noreferrer">@berylcatieno</a></p>
+                        <p><a href="https://linkedin.com/in/berylcatieno" target="_blank" rel="noopener noreferrer">Beryl Atieno</a></p>
                     </div>
                 </div>
             </div>
 
             <div className="response-time">
-                // Average response time: 2-4 hours<br/>
-                // Status: Available for opportunities<br/>
-                // Timezone: EAT (UTC+3)
+                Average response time: 2-4 hours<br/>
+                Timezone: EAT (UTC+3)
             </div>
         </div>
     );

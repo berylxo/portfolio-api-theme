@@ -7,7 +7,7 @@ function Home() {
         <h1 className="greeting">
           Hi, I am <span className="name">Beryl Atieno</span>
         </h1>
-        <p className="title">Backend Developer</p>
+        <p className="title">Software Developer</p>
         <p className="description">
           I create end-to-end products, combining clean user experiences with reliable, scalable backend systems. 
           I care about building software that is both useful and impactful.
