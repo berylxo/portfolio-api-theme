@@ -65,11 +65,6 @@ function OpenSource() {
         </div>
 
         <div className="response-container">
-          <div className="response-header">
-            HTTP/1.1 <span className="status-code">200 OK</span><br />
-            Content-Type: application/json<br />
-            Cache-Control: public, max-age=3600
-          </div>
 
           <div className="stats-section">
             <div className="stats-title">contribution_summary</div>
