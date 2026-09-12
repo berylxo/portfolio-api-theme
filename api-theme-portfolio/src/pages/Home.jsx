@@ -31,6 +31,3 @@ function Home() {
 }
 
 export default Home
-
-// TODO: Fix open source page color tags
-// TODO: fix the projects page CLI (add project picture instead)

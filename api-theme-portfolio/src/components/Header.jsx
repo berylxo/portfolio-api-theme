@@ -24,8 +24,7 @@ function Header() {
         <div className="nav-desktop">
           <NavLink to="/" className="endpoint">Home</NavLink>
           <NavLink to="/about" className="endpoint">About</NavLink>
-          <NavLink to="/projects" className="endpoint">Projects</NavLink>
-          <NavLink to="/opensource" className="endpoint">Opensource</NavLink>
+          <NavLink to="/projects" className="endpoint">Portfolio</NavLink>
           <NavLink to="/contact" className="endpoint">Contact</NavLink>
         </div>
 
@@ -60,14 +59,7 @@ function Header() {
               className="endpoint" 
               onClick={closeMenu}
             >
-              Projects
-            </NavLink>
-            <NavLink 
-              to="/opensource" 
-              className="endpoint" 
-              onClick={closeMenu}
-            >
-              Opensource
+              Portfolio
             </NavLink>
             <NavLink 
               to="/contact" 

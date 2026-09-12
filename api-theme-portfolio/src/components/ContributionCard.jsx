@@ -1,49 +1,26 @@
-import '../css/opensource.css'
-
-function ContributionCard({ 
-  type, 
-  number, 
-  status, 
-  repo, 
-  title, 
-  url, 
-  description, 
-  meta 
-}) {
-  const getTypeClass = (type) => type.toLowerCase();
-  const getStatusClass = (status) => `status-${status.toLowerCase().replace(' ', '-')}`;
-
+function ContributionCard({ state, repo, number, title, url, description, meta = [] }) {
   return (
-    <div className="contribution">
-      <div className="contribution-header">
-        <div className={`contribution-type ${getTypeClass(type)}`}>{type}</div>
-        <div className="contribution-number">#{number}</div>
-        <div className={`contribution-status ${getStatusClass(status)}`}>{status}</div>
+    <article className="contribution">
+      <div className="contribution-head">
+        <span className={`contribution-state state-${state.toLowerCase()}`}>{state}</span>
+        <span className="contribution-repo">{repo} #{number}</span>
       </div>
-      <div className="contribution-repo">{repo}</div>
-      <h3 className="contribution-title">
-        <a 
-          href={url} 
-          className="contribution-link" 
-          target="_blank" 
-          rel="noopener noreferrer"
-        >
-          {title}
-        </a>
-      </h3>
-      <div className="contribution-description">
-        {description}
-      </div>
-      <div className="contribution-meta">
-        {meta.map((item, index) => (
-          <div key={index} className="meta-item">
-            <span>{item.label}:</span>
-            <span className="highlight">{item.value}</span>
-          </div>
-        ))}
-      </div>
-    </div>
+
+      <h2 className="contribution-title">
+        <a href={url} target="_blank" rel="noopener noreferrer">{title}</a>
+      </h2>
+
+      <p className="contribution-description">{description}</p>
+
+      {meta.length > 0 && (
+        <ul className="contribution-meta">
+          {meta.map((item) => (
+            <li key={item}>{item}</li>
+          ))}
+        </ul>
+      )}
+    </article>
   );
 }
 
-export default ContributionCard
+export default ContributionCard;
